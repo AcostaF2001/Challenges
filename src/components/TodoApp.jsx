@@ -22,6 +22,7 @@ export const TodoApp=()=>{
     },[todos])
 
     const handleNewTodo =(todo)=>{
+        console.log( 'hola ');
         const action={
             type:'[TODO] ADD TODO',
             payload:todo

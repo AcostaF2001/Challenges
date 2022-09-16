@@ -29,8 +29,8 @@
 // console.log(todos);
 export const todoReducer=(initialState,action)=>{
     switch(action.type){
-        case 'ABC':
-            throw new Error ('action not yet implemented')
+        case '[TODO] ADD TODO':
+            return[...initialState, action.payload]
             break;
         default:
             return initialState;
