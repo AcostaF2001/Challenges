@@ -5,16 +5,22 @@ import App from './App';
 import FirstApp from './FirstApp'
 import {ComponentApp} from './components/ComponentApp'
 import { TodoApp } from './components/TodoApp';
+import { BrowserRouter } from "react-router-dom";
+
 // import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
+  
   {/* <App />
     <FirstApp value={1} />
     <ComponentApp /> */}
-    <TodoApp/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossOrigin="anonymous"></link>
+    {/* <TodoApp/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossOrigin="anonymous"></link> */}
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </>
     
 );
